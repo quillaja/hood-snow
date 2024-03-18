@@ -1,0 +1,51 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "EPSG:32610"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            596487,
+                            5017976.0000000019
+                        ],
+                        [
+                            609300.00000000093,
+                            5017976.0000000019
+                        ],
+                        [
+                            609300.00000000093,
+                            5031749.0000000037
+                        ],
+                        [
+                            596487,
+                            5031749.0000000037
+                        ],
+                        [
+                            596487,
+                            5017976.0000000019
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 2,
+                "ContourMin": 1500,
+                "ContourMax": 3427.00537109375,
+                "Shape_Length": 53172.000000005588,
+                "Shape_Area": 176473449.00003669,
+                "Name": "Fit",
+                "Note": "moved E edge and rounded extents"
+            }
+        }
+    ]
+}
