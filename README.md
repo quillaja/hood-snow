@@ -1,6 +1,14 @@
 # Seasonal Snowline Fluctuations on Mt Hood
 Using Sentinel-2 imagery to locate and track the location of the snowline on Mt Hood over 7 years. This is my final project for PCC's GEO246 (Remote Sensing).
 
+## TLDR
+
+You basically want to look at `visualization.ipynb` which uses `prepared_data.csv` and `prepared_weather.csv`. In most code files there is a variable near the top for the root data folder that you'd have to change. I also do not provide the elevation slices (`contour_rings`) geodatabase used in some of the arcpy tools.
+
+## Poster
+
+![Project poster](poster_60x36_100dpi.png)
+
 ## Sources
 
 |Data        |Source
@@ -37,7 +45,7 @@ Using Sentinel-2 imagery to locate and track the location of the snowline on Mt 
     - prepared_data.csv
     - prepared_weather.csv
 - other
-    - poster.png
+    - poster_60x35_100dpi.png
     - hood_aoi_32610.geojson
     - requirements.txt
     - README.md (github)
@@ -65,7 +73,7 @@ NWAC ski telem  https://nwac.us/data-portal/location/mt-hood/
     - NDVI        <= 0.0
     - Cloud Prob  <  50%
 
-_NOTE_ NDVI <= 0 seems to work well for winter/snow covered conditions, but undercounts 'usable' area (by ignoring bare pumice) in the summer. < 0.15-0.18 would have worked better for summer. The consequence of this overestimating the `pct_usable_snow`.
+_NOTE_: NDVI <= 0 seems to work well for winter/snow covered conditions, but undercounts 'usable' area (by ignoring bare pumice) in the summer. < 0.15-0.18 would have worked better for summer. The consequence of this overestimating the `pct_usable_snow`.
 
 (Note: 'usuable' renamed 'countable' in poster.)
 
