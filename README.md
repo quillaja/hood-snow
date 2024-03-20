@@ -38,7 +38,7 @@ You basically want to look at `visualization.ipynb` which uses `prepared_data.cs
     - tool_calculate_pct_snow.py
     - tool_pct_clouds_by_date.py
     - tool_rename_bands.py
-- analysis notebooks (uses arcgis conda env)
+- analysis notebooks (any environment with pandas and seaborn)
     - explore.ipynb
     - visualization.ipynb
 - data
