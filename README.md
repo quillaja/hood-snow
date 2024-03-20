@@ -50,7 +50,30 @@ You basically want to look at `visualization.ipynb` which uses `prepared_data.cs
     - requirements.txt
     - README.md (github)
 
-# Validation / verification
+### Data fields
+
+#### prepared_data.csv
+|Field|Type|Description
+|---|---|---
+|date|date/string|Date of observation in %Y-%m-%d format.
+|contour|integer|The lower end of a 100m elevation 'slice' of the mountain, in meters above sea level.
+|pct_snow|float|Percent snow cover of the horizontal area of a elevation 'slice'.
+|pct_clouds|float|Percent cloud cover of the AOI in each observation.
+
+#### prepared_weather.csv
+|Field|Type|Description
+|---|---|---
+|place|string|Name of observation site.
+|date|date/string|Date of observation in %Y-%m-%d format.
+|precip|float|Total precipitation (inches).
+|temp_avg|float|Mean temperature during the day (°F).
+|temp_min|float|Minimum temperature during the day (°F).
+|temp_max|float|Maximum temperature during the day (°F).
+|snow_water|float|Snow water equivalent (inches). Only at Snotel.
+|snow_depth|float|Snow depth (inches). Only at (Timberline) Lodge.
+|elev|integer|Elevation of the observation (meters).
+
+# Validation / Verification
 
 Information used:
 ```
